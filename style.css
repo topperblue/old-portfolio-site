@@ -135,7 +135,7 @@ nav ul li a:hover::before {
 	-ms-animation: fadeIn ease 3s;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
 
 	.logo {
 		position: fixed;
