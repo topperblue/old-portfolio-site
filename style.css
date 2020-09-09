@@ -126,7 +126,6 @@ nav ul li a:hover::before {
 	transform: translateY(-500px);
 	text-align: right;
 	margin-right: 90px;
-	margin-left: 400px;
 	font-family: "Roboto Slab", sans-serif;
 	height: 0;
 	animation: fadeIn ease 3s;
@@ -136,7 +135,7 @@ nav ul li a:hover::before {
 	-ms-animation: fadeIn ease 3s;
 }
 
-.bttn{
+.bttn {
 	background-color: #42183c;
 	font-size: 18px;
 	color: white;
@@ -171,6 +170,7 @@ nav ul li a:hover::before {
 	visibility: visible;
 	transform: scaleX(1);
 }
+
 
 @media(max-width: 950px) {
 
