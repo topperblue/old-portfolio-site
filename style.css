@@ -123,13 +123,14 @@ nav ul li a:hover::before {
 	padding-bottom: 25px;
 }
 
-.page-header-sounds h1 {
-	text-align: center;
-	background-color: #42183c;
-	font-family: 'Lexend Peta', sans-serif;
-	text-emphasis: bold;
-	padding-top: 50px;
-	padding-bottom: 25px;
+.content {
+	font-family: 'Roboto Slab', sans-serif;
+	color: white;
+	transform: translateY(140px);
+	text-align: left;
+	margin: 90px;
+	text-indent: 50px;
+
 }
 
 .welcome {
@@ -218,7 +219,12 @@ nav ul li a:hover::before {
 
 iframe {
 	transform: translateY(250px);
-	padding: 10px
+	padding: 10px;
+}
+
+.portrait {
+	width: 20%;
+	margin: 10px;
 }
 
 @media(max-width: 950px) {
