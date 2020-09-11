@@ -106,15 +106,7 @@ nav ul li a:hover::before {
 }
 
 .page-header {
-	transform: translateY(-675px);
-	color: white;
-	text-align: center;
-	height: 0px;
-	font-family: 'Roboto Slab', sans-serif;
-}
-
-.page-header-sounds {
-	transform: translateY(80px);
+	transform: translateY(655px);
 	color: white;
 	text-align: center;
 	height: 0px;
