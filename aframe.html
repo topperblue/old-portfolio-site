@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
+	<script src="script.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<title>Adam Gerig</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<nav>
+		<div class="menu-icon">
+			<i class="fa fa-bars fa-2x"></i>
+		</div>
+			<div class="name">
+				ADAM GERIG
+			</div>
+		<div class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="sounds.html">Sounds</a></li>
+			<li><a href="aframe.html">A-Frame</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+	</nav>
+	<a-scene Untitled - Keith Haring>
+		<a-entity camera look-controls wasd-controls="acceleration:100" position="0 1.6 0"></a-entity>
+		<a-plane src="images/polka%20dot.png" position="0 0 -4" rotation="-90 0 0" width="30" height="10" color="#93c839" static-body ></a-plane>
+		<a-sky color="#fff50d"></a-sky>
+		<a-entity id="Boombox">
+			<a-box position="-5 .25 -3" height=".7" depth=".3" width=".8" color="#888c8a" sound="src: url(audio/samba.wav); autoplay: true; volume: .05; distanceModel: linear; on: sound-ended"></a-box>
+			<a-cylinder rotation="90 0 0" position="-5.23 .35 -2.85" height=".05" radius=".15" color="#2b2b2b"></a-cylinder>
+			<a-cylinder rotation="90 0 0" position="-4.77 .35 -2.85" height=".05" radius=".15" color="#2b2b2b"></a-cylinder>
+			<a-box position="-5 .1 -2.85" height=".07" depth=".02" width=".2" color="#2b2b2b"></a-box>
+			<a-box position="-5.075 .15 -2.85" height=".05" depth=".05" width=".05" color="#d52718"></a-box>
+			<a-box position="-5.025 .15 -2.85" height=".05" depth=".05" width=".05" color="#28abe7"></a-box>
+			<a-box position="-4.975 .15 -2.85" height=".05" depth=".05" width=".05" color="#8ad779"></a-box>
+			<a-box position="-4.925 .15 -2.85" height=".05" depth=".05" width=".05" color="#f47e1c"></a-box>
+			<a-box position="-5.23 .5 -3" height=".4" depth=".05" width=".05" color="#888c8a"></a-box>
+			<a-box position="-4.77 .5 -3" height=".4" depth=".05" width=".05" color="#888c8a"></a-box>
+			<a-box position="-5 .7 -3" height=".05" depth=".051" width=".5" color="#2b2b2b"></a-box>
+			
+		</a-entity>
+		<a-entity id="Red-Person" 
+		animation="property: rotation; to: 0 0 -6; delay: 5000; dur: 800; easing: easeInOutElastic; loop: false"
+		animation__back="property: rotation; to: -2 0 1; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete;"
+		animation__loop="property: rotation; to: 0 0 -6; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete__back;">
+			<a-box position="-4.6 2.1 -6.9" height="1.25" depth=".3" width=".7" color="#d52718" Body>
+			</a-box>
+			<a-cylinder rotation="110 75 -25" position="-5.08 3.69 -6.87" radius="0.09" height=".25" color="#d52718" Left Hand></a-cylinder>
+			<a-cylinder rotation="0 0 10" position="-4.95 3.1 -6.9" radius="0.1" height="1" color="#d52718" Left Arm></a-cylinder>
+			<a-cylinder rotation="0 0 40" position="-4.65 1.4 -6.91" radius="0.13" height=".6" color="#d52718" Left Thigh></a-cylinder>
+			<a-cylinder rotation="0 0 -25" position="-4.7 .9 -6.91" radius="0.1" height=".8" color="#d52718" Left Leg></a-cylinder>
+			<a-cylinder rotation="120 90 0" position="-4.73 .5 -6.91" radius=".13" height=".5" color="#d52718" Left Foot></a-cylinder>
+			<a-cylinder rotation="90 90 -2" position="-4.2 2.63 -6.9" radius="0.1" height=".8" color="#d52718" Right Shoulder></a-cylinder>
+			<a-cylinder rotation="0 10 10" position="-3.85 2.2 -6.95" radius="0.1" height=".8" color="#d52718" Right Arm></a-cylinder>
+			<a-cylinder rotation="98 90 -25" position="-3.75 1.8 -6.95" radius="0.09" height=".25" color="#d52718" Right Hand></a-cylinder>
+			<a-cylinder rotation="95 90 0" position="-4.2 1.60 -6.9" radius="0.13" height=".6" color="#d52718" Right Thigh></a-cylinder>
+			<a-cylinder rotation="0 0 10" position="-3.95 1.2 -6.91" radius="0.1" height=".8" color="#d52718" Right Leg></a-cylinder>
+			<a-cylinder rotation="80 90 0" position="-3.77 .8 -6.92" radius=".13" height=".5" color="#d52718" Right Foot></a-cylinder>
+			<a-cylinder rotation="90 0 0" position="-4.6 2.95 -6.90" radius=".25" height=".25" color="#d52718" Head></a-cylinder>
+		</a-entity>
+		<a-entity id="Blue-Person"
+		animation="property: position; to: 0 1 0; delay: 8000; dur: 500; easing: easeOutQuad; loop: false;"
+		animation__fall="property: position; to: 0 0 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete;"
+		animation__jump="property: position; to: 0 1 0; dur: 500; easing: easeOutQuad; loop: false; startEvents: animationcomplete__fall;">
+			<a-box position="-2.1 1.87 -5.9" height="1.15" depth=".3" width=".7" color="#28abe7" Body></a-box>
+			<a-cylinder rotation="80 75 -25" position="-3.2 3.17 -5.87" radius="0.09" height=".25" color="#28abe7" Left Hand></a-cylinder>
+			<a-cylinder rotation="0 0 45" position="-2.75 2.77 -5.9" radius="0.1" height="1.2" color="#28abe7" Left Arm></a-cylinder>
+			<a-cylinder rotation="0 0 0 " position="-2.35 .94 -5.91" radius="0.1" height="1" color="#28abe7" Left Leg></a-cylinder>
+			<a-cylinder rotation="87 90 0" position="-2.5 .35 -5.91" radius=".13" height=".5" color="#28abe7" Left Foot></a-cylinder>
+			<a-cylinder rotation="95 -90 0" position="-1.4 3.36 -5.87" radius="0.09" height=".25" color="#28abe7" Right Hand></a-cylinder>
+			<a-cylinder rotation="0 0 -20" position="-1.65 2.77 -5.9" radius="0.1" height="1.2" color="#28abe7" Right Arm></a-cylinder>
+			<a-cylinder rotation="0 0 3 " position="-1.85 .94 -5.91" radius="0.1" height="1" color="#28abe7" Right Leg></a-cylinder>
+			<a-cylinder rotation="110 90 0" position="-1.69 .35 -5.91" radius=".13" height=".5" color="#28abe7" Right Foot></a-cylinder>
+			<a-cylinder rotation="90 0 0" position="-2.10 2.61 -5.85" radius=".25" height=".25" color="#28abe7" Head></a-cylinder>
+		</a-entity>
+		<a-entity id="Green-Person"
+		animation="property: rotation; to: 0 1 0; delay: 11000; dur: 400; easing: easeInOutElastic; loop: false"
+		animation__back="property: rotation; to: 0 -1 0; dur: 400; easing: easeOutBack; loop: false; startEvents: animationcomplete;"
+		animation__loop="property: rotation; to: 0 1 0; dur: 400; easing: easeOutBack; loop: false; startEvents: animationcomplete__back;">
+			<a-box rotation="0 20 -10" position="-.6 1.8 -6.9" height="1.15" depth=".3" width=".7" color="#8ad779" Body></a-box>
+			<a-cylinder rotation="20 0 -20" position="0 1.4 -6.63" radius="0.09" height=".25" color="#8ad779" Left Hand></a-cylinder>
+			<a-cylinder rotation="0 110 90" position="-.9 2.3 -6.68" radius="0.1" height=".4w" color="#8ad779" Left Shoulder></a-cylinder>
+			<a-cylinder rotation="0 0 45" position="-.45 1.88 -6.63" radius="0.087" height="1.2" color="#8ad779" Left Arm></a-cylinder>
+			<a-cylinder rotation="0 20 -20 " position="-.9 1.27 -6.8" radius="0.12" height="1" color="#8ad779" Left Thigh></a-cylinder>
+			<a-cylinder rotation="10 20 30" position="-.89 .59 -6.87" radius="0.1" height=".7" color="#8ad779" Left Leg></a-cylinder>
+			<a-cylinder rotation="45 90 -10" position="-.85 .27 -6.91" radius=".13" height=".5" color="#8ad779" Left Foot></a-cylinder>
+			<a-cylinder rotation="85 -90 0" position="-.05 1.25 -7.72" radius="0.09" height=".25" color="#8ad779" Right Hand></a-cylinder>
+			<a-cylinder rotation="35 0 10" position="-.2 1.78 -7.35" radius="0.1" height="1.2" color="#8ad779" Right Arm></a-cylinder>
+			<a-cylinder rotation="0 20 -20 " position="-.6 1. -6.95" radius="0.12" height=".6" color="#8ad779" Right Thighs></a-cylinder>
+			<a-cylinder rotation="10 20 30" position="-.55 .5 -7.01" radius="0.1" height=".7" color="#8ad779" Right Leg></a-cylinder>
+			<a-cylinder rotation="45 90 -20" position="-.5 .19 -7.05" radius=".13" height=".5" color="#8ad779" Right Foot></a-cylinder>
+			<a-cylinder rotation="90 0 0" position="-.6 2.59 -6.79" radius=".25" height=".25" color="#8ad779" Head></a-cylinder>	
+		</a-entity>
+		<a-entity id="Pink-Person"
+		animation="property: position; to: 0 .5 0; delay: 14000; dur: 300; easing: easeOutQuad; loop: false;"
+		animation__fall="property: position; to: 0 0 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete;"
+		animation__jump="property: position; to: 0 .5 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete__fall;">
+			<a-box rotation="0 0 18" position="1.155 1.8 -5.9" height=".5" depth=".3" width=".67" color="#df3c5f" Body Upper></a-box>
+			<a-box rotation="0 0 0" position="1.2 1.3 -5.9" height=".75" depth=".3" width=".7" color="#df3c5f" Body Lower></a-box>
+			<a-cylinder rotation="-35 90 0" position=".7 2.1 -5.9" radius="0.1" height="1.2" color="#df3c5f" Left Shoulder></a-cylinder>
+			<a-cylinder rotation="0 0 120" position=".25 2.45 -5.9" radius="0.08" height=".3" color="#df3c5f" Left Arm></a-cylinder>
+			<a-cylinder rotation="-10 90 0" position="0.1 2.3 -5.9" radius="0.09" height=".25" color="#df3c5f" Left Hand></a-cylinder>
+			<a-cylinder rotation="0 0 -0" position="1 1.1 -5.9" radius="0.12" height="1" color="#df3c5f" Left Thigh></a-cylinder>
+			<a-cylinder rotation="0 0 25" position="1.1 .45  -5.9" radius="0.1" height=".5" color="#df3c5f" Left Leg></a-cylinder>
+			<a-cylinder rotation="90 90 0" position="1.05 .15 -5.91" radius=".13" height=".5" color="#df3c5f" Left Foot></a-cylinder>
+			<a-cylinder rotation="45 90 0" position="1.5 2 -5.9" radius="0.1" height=".8" color="#df3c5f" Right Shoulder></a-cylinder>
+			<a-cylinder rotation="0 0 45" position="1.45 2.5 -5.9" radius="0.08" height=".8" color="#df3c5f" Right Arm></a-cylinder>
+			<a-cylinder rotation="45 90 0" position="1.2 2.8 -5.9" radius="0.09" height=".25" color="#df3c5f" Right Hand></a-cylinder>
+			<a-cylinder rotation="0 45 -30 " position="1.36 .8 -5.86" radius="0.12" height=".4" color="#df3c5f" Right Thighs></a-cylinder>
+			<a-cylinder rotation="10 -10 35" position="1.5 .5 -5.85" radius="0.1" height=".7" color="#df3c5f" Right Leg></a-cylinder>
+			<a-cylinder rotation="45 90 -20" position="1.58 .19 -5.8" radius=".13" height=".5" color="#df3c5f" Right Foot></a-cylinder>
+			<a-cylinder rotation="90 0 0" position="1.05 2.2 -5.85" radius=".25" height=".25" color="#df3c5f" Head></a-cylinder>
+		</a-entity>
+		<a-entity id="Orange-Person"
+		animation="property: rotation; to: 0 0 -6; delay: 17000; dur: 800; easing: easeInOutElastic; loop: false"
+		animation__back="property: rotation; to: -2 0 1; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete;"
+		animation__loop="property: rotation; to: 0 0 -6; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete__back;"
+		>
+			<a-box rotation="0 20 10" position="3.1 2 -6.9" height="1.15" depth=".3" width=".7" color="#f47e1c" Body></a-box>
+			<a-cylinder rotation="90 110 -10" position="2.7 2.4 -6.75" radius="0.1" height=".7" color="#f47e1c" Left Shoulder></a-cylinder>
+			<a-cylinder rotation="0 20 0" position="2.47 2.6 -6.63" radius="0.08" height=".4" color="#f47e1c" Left Arm></a-cylinder>
+			<a-cylinder rotation="90 90 -10" position="2.42 2.8 -6.63" radius="0.09" height=".25" color="#f47e1c" Left Hand></a-cylinder>
+			<a-cylinder rotation="0 0 0" position="3 1.6 -6.9" radius="0.12" height="1" color="#f47e1c" Left Thigh></a-cylinder>
+			<a-cylinder rotation="0 0 -25" position="2.9 .95  -6.9" radius="0.1" height=".5" color="#f47e1c" Left Leg></a-cylinder>
+			<a-cylinder rotation="90 90 0" position="2.95 .65 -6.91" radius=".13" height=".5" color="#f47e1c" Left Foot></a-cylinder>
+			<a-cylinder rotation="90 90 -20" position="3.5 2.5 -7." radius="0.1" height=".4" color="#f47e1c" Right Shoulder></a-cylinder>
+			<a-cylinder rotation="0 0 25" position="3.67 2.25 -7.05" radius="0.08" height=".6" color="#f47e1c" Right Arm></a-cylinder>
+			<a-cylinder rotation="-75 90 20" position="3.85 2 -7.05" radius="0.09" height=".25" color="#f47e1c" Right Hand></a-cylinder>
+			<a-cylinder rotation="80 90 -20" position="3.6 1.56 -7.1" radius="0.13" height=".4" color="#f47e1c" Right Thigh></a-cylinder>
+			<a-cylinder rotation="0 0 10" position="3.72 1.4 -7.15" radius="0.1" height=".6" color="#f47e1c" Right Leg></a-cylinder>
+			<a-cylinder rotation="80 90 -20" position="3.9 1.1 -7.2" radius=".13" height=".5" color="#f47e1c" Right Foot></a-cylinder>
+			<a-cylinder rotation="90 30 10" position="3.05 2.7 -6.8" radius=".25" height=".25" color="#f47e1c" Head></a-cylinder>
+		</a-entity>
+	</a-scene>
+</body>
+
+</html>
