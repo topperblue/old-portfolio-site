@@ -125,9 +125,21 @@ nav ul li a:hover::before {
 
 .content {
 	font-family: 'Roboto Slab', sans-serif;
+	font-size: 24px;
 	color: white;
 	transform: translateY(140px);
 	text-align: left;
+	margin: 90px;
+	text-indent: 50px;
+
+}
+
+.projects {
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 24px;
+	color: white;
+	transform: translateY(140px);
+	text-align: center;
 	margin: 90px;
 	text-indent: 50px;
 
@@ -180,7 +192,6 @@ nav ul li a:hover::before {
 }
 
 .bttn:hover::before {
-	visibility: visible;
 	transform: scaleX(1);
 }
 
@@ -224,10 +235,10 @@ iframe {
 
 .portrait {
 	width: 20%;
-	margin: 10px;
+	margin: 30px;
 }
 
-@media(max-width: 950px) {
+@media(max-width: 1400px) {
 
 	.name {
 		position: fixed;

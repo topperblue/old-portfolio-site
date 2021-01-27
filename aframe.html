@@ -24,22 +24,23 @@
 		<div class="menu-icon">
 			<i class="fa fa-bars fa-2x"></i>
 		</div>
-			<div class="name">
-				ADAM GERIG
-			</div>
+		<div class="name">
+			ADAM GERIG
+		</div>
 		<div class="menu">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="sounds.html">Sounds</a></li>
-			<li><a href="aframe.html">A-Frame</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="aframe.html">A-Frame</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="sounds.html">Sounds</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</div>
 	</nav>
 	<a-scene Untitled - Keith Haring>
 		<a-entity camera look-controls wasd-controls="acceleration:100" position="0 1.6 0"></a-entity>
-		<a-plane src="images/polka%20dot.png" position="0 0 -4" rotation="-90 0 0" width="30" height="10" color="#93c839" static-body ></a-plane>
+		<a-plane src="images/polka%20dot.png" position="0 0 -4" rotation="-90 0 0" width="30" height="10" color="#93c839" static-body></a-plane>
 		<a-sky color="#fff50d"></a-sky>
 		<a-entity id="Boombox">
 			<a-box position="-5 .25 -3" height=".7" depth=".3" width=".8" color="#888c8a" sound="src: url(audio/samba.wav); autoplay: true; volume: .05; distanceModel: linear; on: sound-ended"></a-box>
@@ -53,12 +54,9 @@
 			<a-box position="-5.23 .5 -3" height=".4" depth=".05" width=".05" color="#888c8a"></a-box>
 			<a-box position="-4.77 .5 -3" height=".4" depth=".05" width=".05" color="#888c8a"></a-box>
 			<a-box position="-5 .7 -3" height=".05" depth=".051" width=".5" color="#2b2b2b"></a-box>
-			
+
 		</a-entity>
-		<a-entity id="Red-Person" 
-		animation="property: rotation; to: 0 0 -6; delay: 5000; dur: 800; easing: easeInOutElastic; loop: false"
-		animation__back="property: rotation; to: -2 0 1; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete;"
-		animation__loop="property: rotation; to: 0 0 -6; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete__back;">
+		<a-entity id="Red-Person" animation="property: rotation; to: 0 0 -6; delay: 5000; dur: 800; easing: easeInOutElastic; loop: false" animation__back="property: rotation; to: -2 0 1; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete;" animation__loop="property: rotation; to: 0 0 -6; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete__back;">
 			<a-box position="-4.6 2.1 -6.9" height="1.25" depth=".3" width=".7" color="#d52718" Body></a-box>
 			<a-cylinder rotation="110 75 -25" position="-5.08 3.69 -6.87" radius="0.09" height=".25" color="#d52718" Left Hand></a-cylinder>
 			<a-cylinder rotation="0 0 10" position="-4.95 3.1 -6.9" radius="0.1" height="1" color="#d52718" Left Arm></a-cylinder>
@@ -73,10 +71,7 @@
 			<a-cylinder rotation="80 90 0" position="-3.77 .8 -6.92" radius=".13" height=".5" color="#d52718" Right Foot></a-cylinder>
 			<a-cylinder rotation="90 0 0" position="-4.6 2.95 -6.90" radius=".25" height=".25" color="#d52718" Head></a-cylinder>
 		</a-entity>
-		<a-entity id="Blue-Person"
-		animation="property: position; to: 0 1 0; delay: 8000; dur: 500; easing: easeOutQuad; loop: false;"
-		animation__fall="property: position; to: 0 0 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete;"
-		animation__jump="property: position; to: 0 1 0; dur: 500; easing: easeOutQuad; loop: false; startEvents: animationcomplete__fall;">
+		<a-entity id="Blue-Person" animation="property: position; to: 0 1 0; delay: 8000; dur: 500; easing: easeOutQuad; loop: false;" animation__fall="property: position; to: 0 0 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete;" animation__jump="property: position; to: 0 1 0; dur: 500; easing: easeOutQuad; loop: false; startEvents: animationcomplete__fall;">
 			<a-box position="-2.1 1.87 -5.9" height="1.15" depth=".3" width=".7" color="#28abe7" Body></a-box>
 			<a-cylinder rotation="80 75 -25" position="-3.2 3.17 -5.87" radius="0.09" height=".25" color="#28abe7" Left Hand></a-cylinder>
 			<a-cylinder rotation="0 0 45" position="-2.75 2.77 -5.9" radius="0.1" height="1.2" color="#28abe7" Left Arm></a-cylinder>
@@ -88,10 +83,7 @@
 			<a-cylinder rotation="110 90 0" position="-1.69 .35 -5.91" radius=".13" height=".5" color="#28abe7" Right Foot></a-cylinder>
 			<a-cylinder rotation="90 0 0" position="-2.10 2.61 -5.85" radius=".25" height=".25" color="#28abe7" Head></a-cylinder>
 		</a-entity>
-		<a-entity id="Green-Person"
-		animation="property: rotation; to: 0 1 0; delay: 11000; dur: 400; easing: easeInOutElastic; loop: false"
-		animation__back="property: rotation; to: 0 -1 0; dur: 400; easing: easeOutBack; loop: false; startEvents: animationcomplete;"
-		animation__loop="property: rotation; to: 0 1 0; dur: 400; easing: easeOutBack; loop: false; startEvents: animationcomplete__back;">
+		<a-entity id="Green-Person" animation="property: rotation; to: 0 1 0; delay: 11000; dur: 400; easing: easeInOutElastic; loop: false" animation__back="property: rotation; to: 0 -1 0; dur: 400; easing: easeOutBack; loop: false; startEvents: animationcomplete;" animation__loop="property: rotation; to: 0 1 0; dur: 400; easing: easeOutBack; loop: false; startEvents: animationcomplete__back;">
 			<a-box rotation="0 20 -10" position="-.6 1.8 -6.9" height="1.15" depth=".3" width=".7" color="#8ad779" Body></a-box>
 			<a-cylinder rotation="20 0 -20" position="0 1.4 -6.63" radius="0.09" height=".25" color="#8ad779" Left Hand></a-cylinder>
 			<a-cylinder rotation="0 110 90" position="-.9 2.3 -6.68" radius="0.1" height=".4w" color="#8ad779" Left Shoulder></a-cylinder>
@@ -104,12 +96,9 @@
 			<a-cylinder rotation="0 20 -20 " position="-.6 1. -6.95" radius="0.12" height=".6" color="#8ad779" Right Thighs></a-cylinder>
 			<a-cylinder rotation="10 20 30" position="-.55 .5 -7.01" radius="0.1" height=".7" color="#8ad779" Right Leg></a-cylinder>
 			<a-cylinder rotation="45 90 -20" position="-.5 .19 -7.05" radius=".13" height=".5" color="#8ad779" Right Foot></a-cylinder>
-			<a-cylinder rotation="90 0 0" position="-.6 2.59 -6.79" radius=".25" height=".25" color="#8ad779" Head></a-cylinder>	
+			<a-cylinder rotation="90 0 0" position="-.6 2.59 -6.79" radius=".25" height=".25" color="#8ad779" Head></a-cylinder>
 		</a-entity>
-		<a-entity id="Pink-Person"
-		animation="property: position; to: 0 .5 0; delay: 14000; dur: 300; easing: easeOutQuad; loop: false;"
-		animation__fall="property: position; to: 0 0 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete;"
-		animation__jump="property: position; to: 0 .5 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete__fall;">
+		<a-entity id="Pink-Person" animation="property: position; to: 0 .5 0; delay: 14000; dur: 300; easing: easeOutQuad; loop: false;" animation__fall="property: position; to: 0 0 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete;" animation__jump="property: position; to: 0 .5 0; dur: 300; easing: easeOutQuad; loop: false; startEvents: animationcomplete__fall;">
 			<a-box rotation="0 0 18" position="1.155 1.8 -5.9" height=".5" depth=".3" width=".67" color="#df3c5f" Body Upper></a-box>
 			<a-box rotation="0 0 0" position="1.2 1.3 -5.9" height=".75" depth=".3" width=".7" color="#df3c5f" Body Lower></a-box>
 			<a-cylinder rotation="-35 90 0" position=".7 2.1 -5.9" radius="0.1" height="1.2" color="#df3c5f" Left Shoulder></a-cylinder>
@@ -126,10 +115,7 @@
 			<a-cylinder rotation="45 90 -20" position="1.58 .19 -5.8" radius=".13" height=".5" color="#df3c5f" Right Foot></a-cylinder>
 			<a-cylinder rotation="90 0 0" position="1.05 2.2 -5.85" radius=".25" height=".25" color="#df3c5f" Head></a-cylinder>
 		</a-entity>
-		<a-entity id="Orange-Person"
-		animation="property: rotation; to: 0 0 -6; delay: 17000; dur: 800; easing: easeInOutElastic; loop: false"
-		animation__back="property: rotation; to: -2 0 1; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete;"
-		animation__loop="property: rotation; to: 0 0 -6; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete__back;">
+		<a-entity id="Orange-Person" animation="property: rotation; to: 0 0 -6; delay: 17000; dur: 800; easing: easeInOutElastic; loop: false" animation__back="property: rotation; to: -2 0 1; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete;" animation__loop="property: rotation; to: 0 0 -6; dur: 800; easing: easeInOutElastic; loop: false; startEvents: animationcomplete__back;">
 			<a-box rotation="0 20 10" position="3.1 1.75 -6.9" height="1.15" depth=".3" width=".7" color="#f47e1c" Body></a-box>
 			<a-cylinder rotation="90 110 -10" position="2.7 2.15 -6.75" radius="0.1" height=".7" color="#f47e1c" Left Shoulder></a-cylinder>
 			<a-cylinder rotation="0 20 0" position="2.47 2.35 -6.63" radius="0.08" height=".4" color="#f47e1c" Left Arm></a-cylinder>
